@@ -11,6 +11,9 @@ lang: ko-KR
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Seoul
 
+# 발행 시각이 빌드 시각보다 늦은 글도 숨기지 않고 표시
+future: true
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 

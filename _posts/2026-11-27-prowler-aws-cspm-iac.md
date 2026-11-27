@@ -1,6 +1,6 @@
 ---
 title: "Prowler로 AWS CSPM 점검하고 Terraform으로 조치하기 (Before/After)"
-date: 2026-11-27 21:00:00 +0900
+date: 2026-11-27 16:00:00 +0900
 categories: [Cloud Security, AWS]
 tags: [aws, prowler, cspm, terraform, iac, isms-p, cis]
 description: Terraform으로 만든 취약 AWS 환경을 Prowler로 점검하고 코드로 조치했다. Critical 5→3, High 18→9, CIS 준수율 36.9%→54.2%. 탐지 누락, 새 FAIL, 위험 수용까지 정리.
