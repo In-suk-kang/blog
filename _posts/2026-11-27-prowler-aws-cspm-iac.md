@@ -1,7 +1,7 @@
 ---
 title: "Prowler로 AWS CSPM 점검하고 Terraform으로 조치하기 (Before/After)"
 date: 2026-11-27 16:00:00 +0900
-categories: [Cloud Security, AWS]
+categories: [실습, Cloud Security]
 tags: [aws, prowler, cspm, terraform, iac, isms-p, cis]
 description: Terraform으로 만든 취약 AWS 환경을 Prowler로 점검하고 코드로 조치했다. Critical 5→3, High 18→9, CIS 준수율 36.9%→54.2%. 탐지 누락, 새 FAIL, 위험 수용까지 정리.
 ---
@@ -9,6 +9,8 @@ description: Terraform으로 만든 취약 AWS 환경을 Prowler로 점검하고
 > **한 줄 요약**: Terraform으로 일부러 취약하게 만든 AWS 환경을 Prowler로 점검하고, 같은 코드로 고친 뒤 다시 점검했다. Critical FAIL은 5건에서 3건으로, High는 18건에서 9건으로 줄었고, CIS AWS 7.0 준수율은 36.9%에서 54.2%로 올랐다.
 
 CSPM 도구를 한 번 돌려 보는 데서 그치지 않고, **취약 환경 구성 → 점검 → 코드로 조치 → 재점검**의 한 사이클을 직접 돌려 봤다. 정리해 보니 숫자보다 "결과를 어떻게 읽어야 하는가"에서 배운 게 더 많았다.
+
+> CSPM 개념이 처음이라면 [CSPM이란? CWPP·CIEM·CNAPP와의 차이]({{ '/posts/cspm-concept/' | relative_url }})를 먼저 읽어도 좋다.
 
 ## 실습 개요
 
